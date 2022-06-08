@@ -1,0 +1,78 @@
+<html>
+
+<head>
+	<style>
+		.inside {
+			margin-left: 100%;
+		}
+
+		.buttons {
+			margin-left: 100%;
+			background-color: rgb(5, 4, 47);
+			color: rgb(236, 229, 241);
+			border-radius: 100cm;
+			block-size: 1.5cm;
+			width: 5cm;
+			border-color: rgb(203, 228, 231);
+		}
+	</style>
+	<title>Login</title>
+</head>
+
+<body style="background-color: rgb(8, 30, 59);">
+	<div style="margin-top: 2%;">
+
+		<h1 style="background-color:rgb(38, 155, 207); color: rgb(255, 255, 255)  ;" align=center>Log in </h1>
+
+		<div
+			style="background-color:rgb(38, 155, 207);color:rgb(8, 8, 8);padding:20px; margin-top: 60px; margin-left: 150px; margin-right: 150px; margin-bottom: 25px;">
+			<font color='red'>
+				<DIV id="une"> </DIV>
+			</font>
+			<form style="margin: auto; padding-right: 50; padding:100 ;border-radius: 70cm  ;" name="Login" method="post" action="LoginServlet" onsubmit="return validate()">
+				<table>
+					<tr>
+						<p>
+							<font color=darkblue size=3><b><u>LOGIN FORM</u></b></font>
+						</p>
+						<br>
+					</tr>
+					<div class="inside">
+						<tr>
+							<td align="center">Username:</td>
+							<td><input type="text" name="username" id="uname" placeholder="username"></td>
+						</tr>
+						<tr>
+							<td align="center">Password:</td>
+							<td><input type="password" name="password" id="pass" placeholder="password"></td>
+						</tr>
+						<br>
+						<tr>
+							<td></td>
+							<td><input class="buttons" type="submit" value='Login Now'></td>
+						</tr>
+					</div>
+				</table>
+			</form>
+		</div>
+		<footer><font color=white> <strong>Atif Aqeel Bsef19a518 </strong></font></footer>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+	function validate() {
+
+		if (document.getElementById("uname").value == "") {
+			document.getElementById('une').innerHTML = "username name should not be empty";
+			return false;
+		}
+		if (document.getElementById("pass").value == "") {
+			document.getElementById('une').innerHTML = "password name should not be empty";
+			document.signup.password.focus();
+			return false;
+		}
+		return true;
+	}
+</script>

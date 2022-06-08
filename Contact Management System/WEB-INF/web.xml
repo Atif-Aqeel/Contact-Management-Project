@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>UserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/UserServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>User</servlet-name>
+		<servlet-class>User</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>User</servlet-name>
+		<url-pattern>/User</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>UserDao</servlet-name>
+		<servlet-class>UserDao</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserDao</servlet-name>
+		<url-pattern>/UserDao</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>ConnectionProvider</servlet-name>
+		<servlet-class>ConnectionProvider</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ConnectionProvider</servlet-name>
+		<url-pattern>/ConnectionProvider</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet>
+		<servlet-name>ADD</servlet-name>
+		<servlet-class>ADD</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ADD</servlet-name>
+		<url-pattern>/ADD</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>DELETE</servlet-name>
+		<servlet-class>DELETE</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DELETE</servlet-name>
+		<url-pattern>/DELETE</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>UPDATE</servlet-name>
+		<servlet-class>UPDATE</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UPDATE</servlet-name>
+		<url-pattern>/UPDATE</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>SELECT</servlet-name>
+		<servlet-class>SELECT</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SELECT</servlet-name>
+		<url-pattern>/SELECT</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>VIEW</servlet-name>
+		<servlet-class>VIEW</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>VIEW</servlet-name>
+		<url-pattern>/VIEW</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>BLOCK</servlet-name>
+		<servlet-class>BLOCK</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BLOCK</servlet-name>
+		<url-pattern>/BLOCK</url-pattern>
+	</servlet-mapping>
+
+
+
+</web-app>

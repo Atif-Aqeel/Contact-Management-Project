@@ -1,0 +1,119 @@
+<html>
+<head>
+	<style>
+		.inside {
+			margin-left: 100%;
+		}
+
+		.buttons {
+			margin-left: 100%;
+			background-color: rgb(216, 145, 13);
+			color: rgb(5, 4, 50);
+			border-radius: 100cm;
+			block-size: 1.5cm;
+			width: 5cm;
+			border-color: rgb(255, 255, 255);
+		}
+	</style>
+	<title>UPDATE NUMBER</title>
+</head>
+
+<body style="background-color: rgb(216, 145, 13);">
+	<div style="margin-top: 2%;">
+
+		<h1 style="background-color:rgb(5, 4, 47); color: rgb(255, 255, 255)  ;" align=center>UPDATE NUMBER </h1>
+
+		<div style="background-color:rgb(5, 4, 50);color:rgb(255, 255, 255); padding:20px; margin-top: 40px; margin-left: 150px; margin-right: 150px; margin-bottom: 100px;">
+			<font color='red'>
+				<DIV id="une"> </DIV>
+			</font>
+			<form style="margin: auto;padding-right: 50; padding:50 ;border-radius: 50cm  ;" action="UPDATE" method="post" onsubmit="return validate()">
+				<table>
+					<tr>
+						<p>
+							<font color=white size=5><b><u>HELLO SIR!</u></b></font>
+						</p>
+					</tr>
+					<br>
+					<div class="inside" >
+                        <tr>
+                            <td align="center"><font color=white size=3> Name </font></td>
+                            <td><input type="text" name="name" placeholder="Enter name"></td>
+                        </tr>
+
+						<tr>
+                            <td align="center"><font color=white size=3> Phone# </font></td>
+                            <td><input type="text" name="phone" placeholder="Enter contact no."></td>
+                        </tr>
+
+                        <tr>
+                            <td align="center"><font color=white size=3> Email </font></td>
+                            <td><input type="text" name="email" placeholder="Enter email" ></td>   
+                        </tr>
+                        
+                        <tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr><tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr>
+						
+						<tr>
+							<td></td>
+							<td>
+								<input class="buttons" type="submit" value="UPDATE" name="Update"> 
+							</td>
+						</tr>
+					</div>
+				</table>
+			</form>
+		</div>
+		<footer style="color: rgb(5, 4, 47); "> <strong> Atif Aqeel <tr align="center" >Bsef19a518 </tr>  </strong>  </footer>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+	function validate() {
+
+		if (document.getElementById("uname").value == "") {
+			document.getElementById('une').innerHTML = "username name should not be empty";
+			return false;
+		}
+		if (document.getElementById("pass").value == "") {
+			document.getElementById('une').innerHTML = "password name should not be empty";
+			document.signup.password.focus();
+			return false;
+		}
+		if (document.getElementById("pass").value != document.getElementById("cpass").value) {
+			document.getElementById('une').innerHTML = "password not matched";
+			document.signup.confirm_password.focus();
+			return false;
+		}
+		if (document.getElementById("email").value == "") {
+			document.getElementById('une').innerHTML = "email should not be empty";
+			return false;
+		}
+		if (document.getElementById("address").value == "") {
+			document.getElementById('une').innerHTML = "Home Address should not be empty";
+			return false;
+		}
+		if (document.getElementById("phone").value == "") {
+			document.getElementById('une').innerHTML = "Phone Number should not be empty";
+			return false;
+		}
+
+		return true;
+	}
+
+	function emailformat(event) {
+		var email_add = "yourName@yourserver.com";
+		if (document.getElementById("email").value.indexOf("@") == -1) {
+			document.getElementById('une').innerHTML = "You need an '@' symbol in your email, please try again.";
+		}
+		if (document.getElementById("email").value.indexOf(".") == -1) {
+			document.getElementById('une').innerHTML = "You need a '.' symbol in your email, please try again.";
+		}
+		if ((document.getElementById("email").value.indexOf("@") != -1) && (email_add.indexOf(".") != -1)) {
+			document.getElementById('une').innerHTML = "";
+			return true;
+		}
+	}
+
+</script>
