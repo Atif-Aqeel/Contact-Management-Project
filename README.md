@@ -1,2 +1,10 @@
-# Contact-Management-Project
-Web Based Project
+# Contact-Management-System
+
+HTML |
+CSS |
+JavaScript |
+Java |
+Servlet |
+DAO |
+JDBC |
+JSP |
