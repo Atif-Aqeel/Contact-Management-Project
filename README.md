@@ -2,5 +2,5 @@
 
 ___________________________
 
-## HTML | CSS | JavaScript
-## Java | Servlet | DAO | JDBC | JSP |
+## FrontEnd: HTML | CSS | JavaScript
+## BackEnd: Java | Servlet | DAO | JDBC | JSP |
